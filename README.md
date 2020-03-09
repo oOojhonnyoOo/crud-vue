@@ -1,30 +1,24 @@
-## SOBRE O SERVER
+# first-test
 
-O servidor é uma aplicação REST gratuita na cloud, se precisar de mais informações ou gerar um token entre no site
+## Project setup
+```
+npm install
+```
 
-    https://gorest.co.in
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-### EXEMPLO REQUISIÇÃO GET
+### Compiles and minifies for production
+```
+npm run build
+```
 
-    curl --location --request GET 'https://gorest.co.in/public-api/users?_format=json&access-token=tquyhXCfjCU3DF3tPej_x-6FxZvVNi9jp1jZ'
+### Lints and fixes files
+```
+npm run lint
+```
 
-### EXEMPLO REQUISIÇÃO POST
-
-    curl --location --request POST 'https://gorest.co.in/public-api/users' \
-    --header 'Accept: application/json' \
-    --header 'Content-Type: application/json' \
-    --header 'Authorization: Bearer tquyhXCfjCU3DF3tPej_x-6FxZvVNi9jp1jZ' \
-    --data-raw '{
-        "first_name":"joao",
-        "last_name":"neto",
-        "gender":"male",
-        "email":"joao.neto@madeiramadeira.com.br",
-        "status":"active"
-    }'
-
-### EXEMPLO REQUISIÇÃO DELETE
-
-    curl --location --request DELETE 'https://gorest.co.in/public-api/users/1821' \
-    --header 'Accept: application/json' \
-    --header 'Content-Type: application/json' \
-    --header 'Authorization: Bearer tquyhXCfjCU3DF3tPej_x-6FxZvVNi9jp1jZ'
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
